@@ -17,7 +17,7 @@ reduce arr = fold (+) 0 (use arr)
 millions = 16000000
 afew = 100
 
-arrs = [fromList (Z:.1025) (P.replicate 1025 i)
+arrs = [fromList (Z:.millions) (P.replicate millions i)
        | i <- [0..999]] 
 
 
