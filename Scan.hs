@@ -3,7 +3,6 @@
 module Main where
 
 import Data.Array.Accelerate  hiding ((!!), size)
-import qualified Data.Array.Accelerate as A
 import Data.Array.Accelerate.CUDA
 import Control.Monad
 
@@ -11,7 +10,7 @@ import Control.Exception
 
 import  System.Environment
 
-import Prelude hiding (fromIntegral,scanl)
+import Prelude hiding (fromIntegral,scanl,all)
 import qualified Prelude as P
 
 scan :: Vector Word32 -> Acc (Vector Word32)
